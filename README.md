@@ -67,4 +67,4 @@ shuffle1 : This is the shuffle factor, which is 1 if we want to shuffle our data
 
 momentum : This is the momentum factor (alpha) to be used in case a momentum gradient descent method is decided to be implemented. Default value is 0 i.e. no momentum.
 
-tan : This is the activation function which will be used at the hidden layer.
+tanh : This is the activation function which will be used at the hidden layer.
