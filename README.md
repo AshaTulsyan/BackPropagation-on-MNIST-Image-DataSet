@@ -10,9 +10,9 @@ Nesterov Momentum Accelerated Gradient is an improvement over simple momentum, i
 
 Weights were initialized randomly from Normal distribution with mean 0 and variance equal to 1/(fan-in), where fan-in is the number of inputs to a neuron.
 
-The architecture used has 1 hidden layers, 64 neurons in the hidden layer. The hidden layers have tanh activation functions, as specified in the task. The output layer has 10 neurons, each corresponding to 1 digit in MNIST. Softmax activation has been used for output layer, and a cross-entropy loss function has been used to observe model's behavior.
+The architecture used has 1 hidden layers, 64 neurons in the hidden layer. The hidden layers has tanh activation functions, as specified in the task. The output layer has 10 neurons, each corresponding to 1 digit in MNIST. Softmax activation has been used for output layer, and a cross-entropy loss function has been used to observe model's behavior.
 
-Various experiments were conducted, changing the architecture of network - number of neurons in both the hidden layers. Early stopping method was used to determine the epoch at which validation accuracy is maximum, and those weights were used to test the model.
+Various experiments were conducted, changing the architecture of network - number of neurons in the hidden layers. Early stopping method was used to determine the epoch at which validation accuracy is maximum, and those weights were used to test the model.
 
 Libraries used
 NumPy
@@ -58,11 +58,11 @@ label_test_oh :This takes in the output labels for test data, in one-hot encoded
 
 H : This is the number of nodes we want at our hidden layer.
 
-l1,l2,l3 : These are the learning rates at the input, hidden , output layer.
+l1,l2,l3 : These are the learning rates at the input, hidden, output layer.
 
 epochs : This specifies the number of iterations we will run on the data. Has to be a number ex:200.
 
-shuffle1 : This is the shuffle factow, which is 1 if we want to shuffle our data after every epoch.
+shuffle1 : This is the shuffle factor, which is 1 if we want to shuffle our data after every epoch.
 
 momentum : This is the momentum factor (alpha) to be used in case a momentum gradient descent method is decided to be implemented. Default value is 0 i.e. no momentum.
 
